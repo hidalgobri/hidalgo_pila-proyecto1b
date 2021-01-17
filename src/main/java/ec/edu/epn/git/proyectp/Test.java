@@ -49,6 +49,10 @@ public class Test {
         Pregunta preg = new Pregunta ();
         Examen examen = new Examen();
 
+        System.out.println("==============================================");
+        System.out.println("            Bienvenidos a TuAcademy!");
+        login();
+
         System.out.println("--------Métodos primera funcionalidad--------");
         System.out.println("validaCurso(ICR222): "+cita.validaCurso("ICR222") );
         System.out.println("registroTutor(Sociales, Jose): "+cita.registroTutor("Sociales","Mateo"));
@@ -71,15 +75,15 @@ public class Test {
 
     public static String[] login()
     {
-        Scanner teclado = new Scanner(System.in);
+        //Scanner teclado = new Scanner(System.in);
         String[] valoresEntrada = new String[2];
 
         System.out.println("\t=================================");
         System.out.println("\t-------------Login---------------");
         System.out.println("Ingrese su nombre");
-        valoresEntrada[0]=teclado.nextLine();
+        //valoresEntrada[0]=teclado.nextLine();
         System.out.println("Ingrese su email");
-        valoresEntrada[1]=teclado.nextLine();
+        //valoresEntrada[1]=teclado.nextLine();
 
         return valoresEntrada;
     }

@@ -18,7 +18,11 @@ public class Cita {
         String tutor;
         Curso cu = new Curso();
         tutor = cu.consultaTutor(materia);
-
+        //REPLACE TEMP WITH QUERY
+        /*  if(tutor.equalsIgnoreCase(nombre))
+            return true;
+        else
+            return false;*/
         return(tutor.equalsIgnoreCase(nombre));
     }
 
@@ -41,7 +45,12 @@ public class Cita {
     }
 
     public boolean existeCita(String id) {
-
+        //REPLACE TEMP WITH QUERY
+        /*if(id.equalsIgnoreCase(codigo)){
+            return true;
+        }else{
+            return false;
+        }*/
         return (id.equalsIgnoreCase(codigo));
     }
 }
